@@ -1,0 +1,403 @@
+@import mixins
+@import media
+@import sprites
+@import normalize
+
+
+$font-weight: 400
+$font-size: 16px
+$line-height: 1.4
+$font-family: Comfortaa, cursive
+$font-family2: Lobster
+$font-family3: Marck Script, cursive
+$color: #545454
+$color2: #45b29a
+$color3: #1e836c
+$green: #00a99d
+$wrapper: 1200px
+
+
+body 	
+	color: $color
+	font: $font-weight $font-size/$line-height $font-family, Arial, sans-serif
+	background: #ffffff
+
+/* MAIN STYLES
+/* ================================================ */
+
+.main-wrapper
+	padding: 0
+	min-width: 320px
+	position: relative 
+	overflow: hidden
+	opacity: 1
+	min-height: 100% 
+
+.wrapper 
+	max-width: $wrapper
+	padding: 0 40px 0 40px
+	margin: 0 auto
+	position: relative
+.container
+	max-width: 600px
+	margin: 0 auto
+	position: relative
+.work-container
+	max-width: 800px
+	margin: 0 auto
+	position: relative
+
+
+
+
+/*===================== Specials =================*/
+.active
+	color: $color!important
+
+h1 
+	font-size: 4rem
+	font-family: $font-family3
+	color: $color2
+	margin-bottom: 2rem
+h2
+	font-size: 3.5rem
+	color: $color3
+	text-align: center
+	margin-top: 150px
+	margin-bottom: 40px
+h3
+	font-size: 1.3rem
+	color: $color2
+	letter-spacing: -1px
+	margin-bottom: 1.7rem		
+
+p
+	font-size: 1.1rem
+	line-height: 1.6
+
+.btn
+	font-size: 1rem
+	background: $color2
+	padding: 15px 20px 15px 50px
+	position: relative
+	color: #1b7f69
+	border-radius: 3px
+	border: 0
+	text-transform: uppercase	
+	&:hover
+		background: #3ea08a
+
+.header__cloud_left.clouds__bottom
+	top: 72%
+	left: 3%
+.header__cloud_right.clouds__bottom
+	top: 65%
+	right: 3%
+
+img
+	display: block
+
+span 
+	display: inline-block
+
+/* text position */
+
+.text-left
+	text-align: left !important
+
+.text-center
+	text-align: center !important
+
+.text-right
+	text-align: right !important
+
+/*================================== HEADER =============================*/
+.header
+	background-color: #e0ebe8
+	&-top
+		padding-top: 50px
+		margin-bottom: 150px
+	&-center
+		margin-bottom: 150px	
+	&-bottom
+		position: relative
+		img
+			max-width: 100%
+			margin: 0 auto	
+	&__text
+		text-align: center	
+		&__info
+			font-size: 1.7rem
+			font-family: $font-family2
+			color: $color2
+			letter-spacing: 1.5px
+	&__cloud
+		&_left
+			position: absolute
+			left: 11%
+		&_right
+			position: absolute
+			right: 13%
+			top: 27%
+	&__flag
+		&__left
+			position: absolute
+			left: 25%
+			bottom: 40%
+		&__right	
+			position: absolute	
+			right: 25%
+			bottom: 40%
+.nav__menu
+	list-style: none
+	display: flex
+	justify-content: flex-end	
+	&__link
+		font-size: 1.5rem
+		font-family: $font-family2
+		color: $color2
+		margin-left: 30px
+		&:hover
+			color: $color
+		
+/*================================== HELLO =============================*/
+.hello
+	margin: 100px auto 0 auto
+	max-width: 460px
+	figure
+		margin: 0 auto
+		max-width: 150px
+		padding-bottom: 40px
+	&__text
+		text-align: center
+
+
+/*================================== WHAT I CAN =============================*/
+
+
+/*================================== DEVELOPE =============================*/
+.develope
+	display: flex
+	margin-bottom: 100px
+	&:nth-child(odd)
+		flex-direction: row-reverse
+		.develope__text
+			margin-left: 0
+	&__img
+		img
+			width: 120px
+			height: 120px	
+	&__text
+		margin-left: 70px
+
+	/*================================== CREATIVE =============================*/	
+#creative
+	background: $green	
+.work-shots
+	padding-top: 4rem	
+	.shots
+		max-width: 800px
+		&__btn
+			text-transform: uppercase
+			color: #ffffff
+			font-size: 1rem
+			padding: 1rem 2rem
+			background: #383838
+			border-radius: 20px
+			&:hover
+				background: #222222
+		img
+			margin: 0 auto
+			box-shadow: 12px 12px 65px #383838
+		&-info
+			padding: 1rem 0
+			text-align: center	
+			&__title,&__title2,&__description
+				color: #ffffff
+			&__title
+				font-size: 2.5rem
+				margin-top: 3rem
+			&__title2
+				margin-bottom: 4rem		
+			&__description
+				margin-bottom: 2rem
+			&__button
+				margin-bottom: 3rem
+
+
+/*================================== DESIGN =============================*/
+#design
+	background: linear-gradient(-225deg, #10d5db 0%, #2d8dff 100%)
+	.shots
+		img
+			box-shadow: 12px 12px 65px #256dc2
+		&__btn
+			color: #222222
+			background: #ebebeb
+			&:hover
+				color: #ffffff
+				background: linear-gradient(-225deg, #256dc2 0%, #10d5db 100%)
+
+	/*================================== HELP =============================*/	
+#next		
+	background: #ededf8
+	.shots
+		img
+			width: 450px
+			height: 600px
+			box-shadow: 12px 12px 65px rgba(0,1,197,0.45)
+		&-info
+			&__title,&__title2,&__description
+				color: #383838	
+		&__btn
+			color: #a8a8e4
+			background: #21364b
+			&:hover
+				color: #ffffff
+				background: #383838
+	/*================================== HELP =============================*/	
+.help
+	margin-bottom: 100px
+	&__text
+		text-align: center
+		p
+			margin-bottom: 50px
+		.button
+			position: relative
+			[class*='icon']	
+				position: absolute
+				font-size: 1.5rem
+				left: 10%
+				top: 23%
+				font-weight: 400
+				color: #1b7f69
+
+
+
+/*================================== FOOTER =============================*/	
+.footer
+	background: #c5ded7
+	padding: 60px 0
+	&__social
+		display: flex
+		font-size: 1.3rem
+		color: $color2
+		margin-bottom: 60px
+		&__item
+			margin-left: 50px
+			&:hover
+				color: $color
+			[class*='icon']
+				font-size: 1.5rem
+				vertical-align: text-top
+				color: #222222
+				margin-right: 10px
+	&__copy
+		text-align: center
+		.copyright
+			font-size: 1rem
+			color: $color2	
+			&:hover
+				color: $color
+			
+				
+/*================================== MEDIA =============================*/
+
++max-screen(1115px)	
+	.header__cloud_left
+		left: 7%
+	.header__cloud_right
+		right: 7%
+
++max-screen(960px)
+	.header__cloud_left
+		display: none
+	.header__cloud_right
+		display: none
+	.header__flag__left
+		left: 5%
+	.header__flag__right
+		right: 5%
+	.develope
+		flex-direction: column	
+		&:nth-child(odd)
+			-ms-flex-direction: column-reverse	
+		&__img
+			img 
+				position: absolute
+				left: 40%	
+		&__text
+			text-align: center
+			margin-top: 160px
+	.button
+		.btn
+			padding: 15px 90px 15px 100px	
++max-screen(650px)
+	p 
+		font-size: 1rem
+	.container
+		max-width: 400px
+	.header__flag__left
+		left: 0
+	.header__flag__right
+		right: 0
+	#next
+		.container 
+			max-width: 320px
+			
+		.shots
+			img
+				width: 100%
+				margin: 0
+				
+	.develope
+		&__img
+			img
+				left: 35%
+		&__text
+			margin-left: -20px	
+	.footer__social
+		font-size: 1.1rem
+		&__item
+			margin-left: 30px
+			[class*='icon']
+				display: none
++max-screen(460px)
+	.container
+		max-width: 250px
+	h1
+		font-size: 2.9rem	
+	h2 
+		font-size: 2rem	
+	.header__text__info	
+		font-size: 1.4rem
+	.header__flag__left
+		left: -12%
+	.header__flag__right
+		right: -10%	
+	.nav__menu
+		justify-content: center	
+	.develope
+		&__img 
+			img
+				left: 25%				
+	.button
+		.btn
+			font-size: 0.8rem
+			padding: 15px 40px 16px 60px	
+			[class*='icon']
+				font-size: 1.2rem	
+				top: 25%	
+	.footer__social__item
+		font-size: 0.9rem
+		margin-left: 0
+		&:first-child
+			margin-right: 10px
+	.footer__copy
+		.copyright
+			font-size: 0.8rem		
+
+			
+
+					
+			
